@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GroggCalculatorController">
+   <children>
+      <VBox prefHeight="431.0" prefWidth="625.0">
+         <children>
+            <Pane prefHeight="52.0" prefWidth="625.0">
+               <children>
+                  <Label layoutX="73.0" layoutY="-12.0" text="Grogg Calculator" textAlignment="CENTER" textFill="#f80000">
+                     <font>
+                        <Font name="AR DELANEY" size="56.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="352.0" prefWidth="625.0">
+               <children>
+                  <ImageView blendMode="HARD_LIGHT" fitHeight="371.0" fitWidth="625.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/night.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="168.0" fitWidth="194.0" layoutX="443.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo-hc-standard-cmyk.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="168.0" fitWidth="136.0" layoutX="41.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bombay-sapphire-logo.gif" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="drinkVolym" layoutX="127.0" layoutY="65.0" prefHeight="31.0" prefWidth="104.0" promptText="Drink Volym" />
+                  <TextField fx:id="drinkStyrka" layoutX="127.0" layoutY="125.0" prefHeight="31.0" prefWidth="104.0" promptText="Drink Styrka" />
+                  <TextField fx:id="mangdSprit" layoutX="383.0" layoutY="65.0" prefHeight="31.0" prefWidth="104.0" promptText="Mängd Sprit" />
+                  <TextField fx:id="mangdLask" layoutX="383.0" layoutY="125.0" prefHeight="31.0" prefWidth="104.0" promptText="Mängd Läsk" />
+                  <Button fx:id="fromResultToRecipe" layoutX="289.0" layoutY="80.0" mnemonicParsing="false" text="---&gt;" />
+                  <Button fx:id="fromRecipeToResult" layoutX="289.0" layoutY="111.0" mnemonicParsing="false" text="&lt;---" />
+                  <TextField fx:id="spritStyrka" layoutX="255.0" layoutY="14.0" prefHeight="31.0" prefWidth="94.0" promptText="SpritStyrka" />
+                  <Label layoutX="359.0" layoutY="19.0" text="\%" />
+                  <Label layoutX="242.0" layoutY="69.0" text="cl" />
+                  <Label layoutX="241.0" layoutY="130.0" text="\%" />
+                  <Label layoutX="499.0" layoutY="71.0" text="cl" />
+                  <Label layoutX="499.0" layoutY="131.0" text="cl" />
+                  <ImageView fitHeight="226.0" fitWidth="333.0" layoutX="146.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/smirnoff_logo-600x403.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutY="396.0" prefHeight="31.0" prefWidth="625.0">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" text="Grogg Calculator 0.2" />
+            <Label layoutX="492.0" layoutY="11.0" text="Drink Responsibly" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
